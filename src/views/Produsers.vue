@@ -1,14 +1,14 @@
 <template>
   <div class="content">
-    <el-col span="16">
-      <el-col span="12" v-for="prod in produsers" :key="prod.index">
+    <el-col :span="16">
+      <el-col :span="12" v-for="prod in produsers" :key="prod.index">
         <div class="card">
           <el-card :body-style="{ padding: '0px' }" class="center prod-card">
             <img :src="getImgUrl(prod.img)" class="image img" />
             <div style="padding: 14px">
               <span>{{ prod.name }}</span>
               <div class="bottom clearfix">
-                <a :href="prod.link"><el-button type="info" size="small" round="true" class="button">Читать</el-button></a>
+                <a :href="prod.link"><el-button type="info" size="small" :round="true" class="button">Читать</el-button></a>
               </div>
             </div>
           </el-card>
