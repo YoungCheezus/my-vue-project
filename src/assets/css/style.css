@@ -151,3 +151,10 @@ a:hover {
 .el-button-group>.el-button {
     background-color: #FFE4C4;
 }
+.margin-3 {
+    margin-top: 3%;
+}
+h2 {
+    letter-spacing: 3px;
+    color: #2f3236;
+}

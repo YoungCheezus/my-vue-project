@@ -1,5 +1,8 @@
 <template>
   <div class="content">
+    <h2>Инструменталы</h2>
+    <hr>
+    <div class="margin-3"></div>
     <el-button-group>
       <el-button v-for="genre in genres" @click="filteredMusic(genre.name)" :value="genre.id" :key="genre.id">
         {{ genre.name}}
@@ -64,6 +67,7 @@ export default {
           date_relise: "2017-01-02",
           rating: 7.3,
           price: 300,
+          id: 1
         },
         {
           executor: "Slava Marlow",
@@ -72,6 +76,7 @@ export default {
           date_relise: "2020-05-03",
           rating: 8.7,
           price: 200,
+          id: 2
         },
         {
           executor: "Scriptonite",
@@ -80,6 +85,7 @@ export default {
           date_relise: "2019-07-03",
           rating: 8,
           price: 400,
+          id: 3
         },
         {
           executor: "Cheezus",
@@ -88,6 +94,7 @@ export default {
           date_relise: "2016-01-02",
           rating: 9.7,
           price: 350,
+          id: 4
         },
         {
           executor: "Scady",
@@ -96,6 +103,7 @@ export default {
           date_relise: "2020-01-02",
           rating: 9.4,
           price: 250,
+          id: 5
         },
         {
           executor: "CVPELLV",
@@ -104,6 +112,7 @@ export default {
           date_relise: "2017-05-03",
           rating: 9.4,
           price: 320,
+          id: 6
         },
         {
           executor: "Slava Marlow",
@@ -112,14 +121,15 @@ export default {
           date_relise: "2019-08-10",
           rating: 9.4,
           price: 390,
+          id: 7
         },
       ],
       genres: [
-        { name: 'Все жанры'},
-        { name: 'Trap'},
-        { name: 'Pop'},
-        { name: 'Old school'},
-        { name: 'Dark'},
+        { name: 'Все жанры', id: 1},
+        { name: 'Trap', id: 2},
+        { name: 'Pop', id: 3},
+        { name: 'Old school', id: 4},
+        { name: 'Dark', id: 5},
       ],   
       filtMusic: 0,
       selectedGenre:0

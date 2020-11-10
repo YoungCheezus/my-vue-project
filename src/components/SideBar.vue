@@ -13,7 +13,7 @@
           tag="el-menu-item"
           active-class="active"
           :to="link.url">
-          {{ link.tittle }} <i class="el-icon-right"></i>
+          {{ link.title }} <i class="el-icon-right"></i>
         </router-link>
       </el-menu>
       <div class="search">
@@ -61,9 +61,9 @@
 export default {
   data: () => ({
     links: [
-      { tittle: "Инструменталы", url: "/" },
-      { tittle: "Чарт", url: "/beats" },
-      { tittle: "Продюсеры", url: "/produsers" },
+      { title: "Инструменталы", url: "/" },
+      { title: "Чарт", url: "/beats" },
+      { title: "Продюсеры", url: "/produsers" },
     ],
     input: "",
   }),

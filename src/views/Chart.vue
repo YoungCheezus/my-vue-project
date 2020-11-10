@@ -1,6 +1,9 @@
 <template>
 <el-col :span="20">
   <div class="content">
+    <h2>Чарт</h2>
+    <hr>
+    <div class="margin-3"></div>
     <template>
       <el-carousel :interval="9000" arrow="always" height="350px">
         <el-carousel-item v-for="item in beats" :key="item.id">

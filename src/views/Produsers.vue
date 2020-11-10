@@ -1,5 +1,8 @@
 <template>
   <div class="content">
+    <h2>Продюсеры</h2>
+    <hr>
+    <div class="margin-3"></div>
     <el-col :span="16">
       <el-col :span="12" v-for="prod in produsers" :key="prod.index">
         <div class="card">
